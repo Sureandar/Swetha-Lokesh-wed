@@ -3,8 +3,8 @@
 // Date: October 21, 2026 | Vishnu Mahal, Minjur, Chennai
 // ==========================================================================
 
-// Wedding Date: October 21, 2026 at 09:30 AM IST
-const weddingDate = new Date("Oct 21, 2026 09:30:00").getTime();
+// Wedding Date: October 21, 2026 at 10:30 AM IST
+const weddingDate = new Date("Oct 21, 2026 10:30:00").getTime();
 let isMusicPlaying = false;
 let audioPlayer = null;
 let loveCount = 128;
@@ -20,6 +20,8 @@ const defaultBlessings = [
 const welcomeMessages = [
   "Hi there! Welcome to our wedding invitation! 👋",
   "We can't wait to celebrate with you on October 21st! 💖",
+  "Marriage Ceremony starts at 10:30 AM morning! 💍",
+  "Wedding Reception starts at 12:30 PM afternoon! ✨",
   "Join us at Vishnu Mahal, Minjur, Chennai! 🏛️",
   "Two hearts, one sacred vow united in faith and love! ✝️✨",
   "Your prayers and presence are our greatest blessing! 🌸",
@@ -281,10 +283,10 @@ function downloadICSEvent() {
     "BEGIN:VEVENT",
     "UID:swetha-lokesh-wedding-20261021@wedding.com",
     "DTSTAMP:20261009T000000Z",
-    "DTSTART:20261021T040000Z", // 9:30 AM IST
-    "DTEND:20261021T163000Z",   // 10:00 PM IST
+    "DTSTART:20261021T050000Z", // 10:30 AM IST
+    "DTEND:20261021T103000Z",   // 4:00 PM IST
     "SUMMARY:Wedding & Reception of Ch Swetha & C Lokesh 💍✝️",
-    "DESCRIPTION:Wedding Ceremony & Grand Reception of Ch Swetha & C Lokesh. Your prayers and presence are cherished!",
+    "DESCRIPTION:Marriage Ceremony starts at 10:30 AM morning and Wedding Reception starts at 12:30 PM afternoon at Vishnu Mahal, Minjur, Chennai. Your prayers and presence are cherished!",
     "LOCATION:Vishnu Mahal, Minjur, Chennai, Tamil Nadu",
     "STATUS:CONFIRMED",
     "END:VEVENT",
@@ -412,6 +414,9 @@ function shareOnWhatsApp() {
     "💍✝️ *You're Cordially Invited!*\n\n" +
     "Together with our families, we invite you to celebrate the Wedding & Reception of *Ch Swetha & C Lokesh*.\n\n" +
     "📅 *Date:* Wednesday, October 21, 2026\n" +
+    "⏰ *Timing:*\n" +
+    "  • Marriage Ceremony: 10:30 AM (Morning)\n" +
+    "  • Wedding Reception: 12:30 PM (Afternoon)\n" +
     "🏛️ *Venue:* Vishnu Mahal, Minjur, Chennai\n\n" +
     "✨ Tap below to view our digital wedding invitation & map directions:\n" +
     window.location.href
