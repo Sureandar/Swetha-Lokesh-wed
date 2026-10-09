@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ch Swetha & C Lokesh — Wedding Celebration 💍✝️</title>
+  
+  <!-- SEO & Social Sharing Meta Tags -->
+  <meta name="description" content="We cordially invite you to celebrate the Christian Wedding & Reception of Ch Swetha & C Lokesh on October 21, 2026 at Vishnu Mahal, Minjur, Chennai.">
+  <meta property="og:title" content="Ch Swetha & C Lokesh — Wedding Invitation 💖✝️">
+  <meta property="og:description" content="Join us in celebrating our holy union! View event schedule, venue directions, and download the digital invitation.">
+  <meta property="og:image" content="assets/wedding_poster.png">
+  <meta property="og:type" content="website">
+  
+  <!-- Google Fonts for Christian Wedding Elegance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Parchment & Holy Light Atmosphere -->
+  <div class="parchment-texture"></div>
+  <div class="divine-glow"></div>
+
+  <!-- Falling Rose Petals Shower Container -->
+  <div class="rose-petals-container" id="rose-petals-container"></div>
+
+  <!-- Cover Page Overlay ("Envelope Unveiling Experience") -->
+  <div class="cover-overlay" id="cover-overlay">
+    <div class="cover-card">
+      <div class="filigree-corner corner-tl"></div>
+      <div class="filigree-corner corner-tr"></div>
+      <div class="filigree-corner corner-bl"></div>
+      <div class="filigree-corner corner-br"></div>
+      
+      <!-- Holy Cross & Rings Emblem -->
+      <div class="cover-emblem">
+        <div class="holy-cross-icon">
+          <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M46 15 H54 V45 H80 V55 H54 V105 H46 V55 H20 V45 H46 V15 Z" fill="url(#goldGradient)" stroke="#8A6B29" stroke-width="1.5"/>
+            <circle cx="50" cy="50" r="14" stroke="url(#goldGradient)" stroke-width="1.5" fill="none" opacity="0.6"/>
+            <defs>
+              <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#EED58D" />
+                <stop offset="50%" stop-color="#C59B40" />
+                <stop offset="100%" stop-color="#8A641A" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      
+      <p class="cover-verse">“Therefore what God has joined together, let no one separate.”<br><span>— Mark 10:9 —</span></p>
+
+      <div class="cover-initials">S & L</div>
+      
+      <div class="divider-gold">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+        </svg>
+      </div>
+      
+      <p class="cover-subtitle">You are cordially invited to celebrate the South Indian Christian Wedding & Reception of</p>
+      <h2 class="cover-names">Ch Swetha <span>&</span> C Lokesh</h2>
+      <p class="cover-date-venue">October 21, 2026 • Vishnu Mahal, Minjur, Chennai</p>
+      
+      <button type="button" class="btn-gold" id="open-inv-btn" aria-label="Open Wedding Invitation">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 18px; height: 18px;">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+        </svg>
+        <span>Open Invitation</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Sticky Top Navigation Header -->
+  <header>
+    <div class="header-logo">
+      <span class="cross-mini">✝</span>
+      <span class="names-logo">Swetha & Lokesh</span>
+    </div>
+    
+    <div class="header-actions">
+      <!-- Music toggle button -->
+      <button type="button" class="icon-btn" id="music-toggle" title="Play Wedding Hymn / Music" aria-label="Play/Pause Background Music">
+        <svg id="music-icon-play" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 9.75 19.5 12m0 0 2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6 4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
+        </svg>
+      </button>
+      
+      <!-- Quick Map Directions Link -->
+      <a href="https://www.google.com/maps/search/?api=1&query=Vishnu+mahal+minjur+chennai" target="_blank" rel="noopener noreferrer" class="icon-btn-text" title="Venue Directions">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+        </svg>
+        <span>Map</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+    
+    <!-- Hero Banner with Live Countdown -->
+    <section class="hero-section" id="hero">
+      <div class="holy-cross-top">
+        <svg viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 3 H17 V11 H25 V15 H17 V33 H13 V15 H5 V11 H13 V3 Z" fill="#C59B40" stroke="#9A7727" stroke-width="1"/>
+        </svg>
+      </div>
+
+      <p class="hero-subtitle">Together with their Families</p>
+      
+      <h1 class="hero-title">Ch Swetha</h1>
+      <div class="hero-ampersand">&</div>
+      <h1 class="hero-title">C Lokesh</h1>
+      
+      <p class="hero-scripture">“And over all these virtues put on love, which binds them all together in perfect unity.”<br><span>— Colossians 3:14 —</span></p>
+      
+      <p class="hero-date-venue">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 16px; height: 16px;">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+        </svg>
+        Wednesday, October 21, 2026 • Vishnu Mahal, Minjur, Chennai
+      </p>
+      
+      <!-- Live Countdown Timer -->
+      <div class="countdown-wrapper">
+        <p class="countdown-heading">Count Every Moment Until We Say "I Do"</p>
+        <div class="countdown-container">
+          <div class="countdown-box">
+            <div class="countdown-num" id="days">00</div>
+            <div class="countdown-label">Days</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="hours">00</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="minutes">00</div>
+            <div class="countdown-label">Minutes</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="seconds">00</div>
+            <div class="countdown-label">Seconds</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Couple Spotlight & Caricature Section -->
+    <section class="couple-section" id="couple">
+      <div class="card-ornament">
+        <div class="filigree-corner corner-tl"></div>
+        <div class="filigree-corner corner-tr"></div>
+        <div class="filigree-corner corner-bl"></div>
+        <div class="filigree-corner corner-br"></div>
+        
+        <h2 class="section-title">The Bride & Groom</h2>
+        <div class="divider-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+          </svg>
+        </div>
+        
+        <div class="couple-portrait-container">
+          <div class="couple-halo"></div>
+          <img src="assets/cartoon_couple.png" alt="Ch Swetha & C Lokesh Caricature Wedding Illustration" class="couple-caricature-img">
+        </div>
+        
+        <div class="couple-names-wrap">
+          <h3 class="couple-name">Ch Swetha <span>&</span> C Lokesh</h3>
+          <p class="couple-vow">“Two lives, two hearts, joined together in friendship, united forever in faith and love.”</p>
+        </div>
+
+        <!-- Quick 1-click Calendar button (No name/phone/count needed!) -->
+        <div class="save-date-actions">
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+%26+Reception+of+Ch+Swetha+%26+C+Lokesh&dates=20261021T040000Z/20261021T163000Z&details=Holy+Matrimony+%26+Reception+Celebration+of+Ch+Swetha+%26+C+Lokesh.+Your+prayers+and+presence+are+cherished!&location=Vishnu+Mahal,+Minjur,+Chennai" target="_blank" rel="noopener noreferrer" class="btn-gold" id="btn-google-cal">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 18px; height: 18px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+            <span>Add to Google Calendar</span>
+          </a>
+          
+          <button type="button" class="btn-outline-gold" id="download-ics-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 18px; height: 18px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+            <span>Save to Phone Calendar (.ics)</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Celebration Schedule Section -->
+    <section class="celebration-section" id="schedule">
+      <h2 class="section-title">The Holy Celebration</h2>
+      <div class="divider-gold">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+      </div>
+      
+      <div class="events-grid">
+        <!-- Event 1: Holy Matrimony Wedding Ceremony -->
+        <div class="event-card">
+          <div class="event-badge">
+            <span class="month">OCT</span>
+            <span class="day">21</span>
+          </div>
+          <div class="event-type-pill">✝️ Holy Matrimony</div>
+          <h3 class="event-card-title">Marriage Ceremony</h3>
+          <div class="event-time">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 15px; height: 15px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            <span>09:30 AM onwards</span>
+          </div>
+          <p class="event-venue">
+            <b>Vishnu Mahal</b><br>
+            Minjur, Chennai<br>
+            Tamil Nadu
+          </p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Vishnu+mahal+minjur+chennai" target="_blank" rel="noopener noreferrer" class="event-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+            <span>Open in Google Maps</span>
+          </a>
+        </div>
+
+        <!-- Event 2: Grand Wedding Reception -->
+        <div class="event-card">
+          <div class="event-badge">
+            <span class="month">OCT</span>
+            <span class="day">21</span>
+          </div>
+          <div class="event-type-pill">✨ Celebration & Dinner</div>
+          <h3 class="event-card-title">Wedding Reception</h3>
+          <div class="event-time">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 15px; height: 15px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            <span>06:30 PM onwards</span>
+          </div>
+          <p class="event-venue">
+            <b>Vishnu Mahal</b><br>
+            Minjur, Chennai<br>
+            Tamil Nadu
+          </p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Vishnu+mahal+minjur+chennai" target="_blank" rel="noopener noreferrer" class="event-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+            <span>Open in Google Maps</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Venue & Directions Section -->
+    <section class="venue-section" id="venue">
+      <div class="venue-card">
+        <div class="filigree-corner corner-tl"></div>
+        <div class="filigree-corner corner-tr"></div>
+        <div class="filigree-corner corner-bl"></div>
+        <div class="filigree-corner corner-br"></div>
+        
+        <h2 class="section-title">The Venue</h2>
+        <div class="divider-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+        </div>
+
+        <h3 class="venue-name">Vishnu Mahal</h3>
+        <p class="venue-address">
+          Minjur, Chennai, Tamil Nadu
+        </p>
+
+        <div class="venue-details-badges">
+          <div class="venue-badge-item">
+            <span class="v-icon">🚗</span>
+            <span>Spacious Car Parking</span>
+          </div>
+          <div class="venue-badge-item">
+            <span class="v-icon">❄️</span>
+            <span>Central Air Conditioned</span>
+          </div>
+          <div class="venue-badge-item">
+            <span class="v-icon">🍽️</span>
+            <span>Grand Banquet Hall</span>
+          </div>
+        </div>
+
+        <div class="venue-actions">
+          <a href="https://www.google.com/maps/search/?api=1&query=Vishnu+mahal+minjur+chennai" target="_blank" rel="noopener noreferrer" class="btn-gold" style="padding: 12px 28px;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 18px; height: 18px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.314a2.25 2.25 0 0 0-2.006 0L2.622 5.751A1.125 1.125 0 0 0 2 6.757v12.422c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.997 2.498a1.125 1.125 0 0 0 1.003 0Z" />
+            </svg>
+            <span>Get Driving Directions</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Official Digital Invitation Poster Section -->
+    <section class="poster-section" id="poster">
+      <h2 class="section-title">Official Wedding Invitation</h2>
+      <div class="divider-gold">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+        </svg>
+      </div>
+      <p class="section-subtitle">Download the commemorative caricature invitation card or share it directly with loved ones</p>
+
+      <div class="poster-preview-card">
+        <div class="poster-image-frame">
+          <img src="assets/wedding_poster.png" alt="Official Wedding Invitation Card - Ch Swetha & C Lokesh" class="poster-preview-img" id="poster-img">
+        </div>
+        
+        <div class="poster-card-actions">
+          <a href="assets/wedding_poster.png" download="Ch_Swetha_and_C_Lokesh_Wedding_Invitation.png" class="btn-gold" style="flex: 1; justify-content: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 18px; height: 18px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+            <span>Download Poster (PNG)</span>
+          </a>
+
+          <button type="button" class="btn-outline-gold" id="share-whatsapp-btn" style="flex: 1; justify-content: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width: 18px; height: 18px;">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.82 12.04 21.82C17.5 21.82 21.96 17.37 21.96 11.91C21.96 6.45 17.5 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.07 16.3C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.68 12.04 3.68C16.58 3.68 20.28 7.37 20.28 11.91C20.28 16.46 16.58 20.15 12.04 20.15ZM16.56 14.41C16.31 14.28 15.1 13.69 14.88 13.61C14.65 13.52 14.49 13.48 14.32 13.73C14.16 13.98 13.69 14.53 13.55 14.69C13.41 14.86 13.26 14.88 13.01 14.75C12.77 14.63 11.97 14.37 11.03 13.53C10.3 12.87 9.8 12.06 9.66 11.82C9.52 11.57 9.65 11.44 9.77 11.31C9.88 11.2 10.02 11.02 10.15 10.87C10.28 10.72 10.32 10.62 10.4 10.45C10.48 10.29 10.44 10.14 10.38 10.02C10.32 9.89 9.83 8.69 9.62 8.19C9.42 7.71 9.22 7.77 9.06 7.76H8.58C8.42 7.76 8.15 7.82 7.93 8.07C7.7 8.31 7.07 8.9 7.07 10.11C7.07 11.32 7.95 12.48 8.08 12.65C8.2 12.81 9.81 15.3 12.28 16.37C12.87 16.62 13.33 16.77 13.68 16.89C14.27 17.07 14.81 17.05 15.24 16.98C15.71 16.91 16.69 16.39 16.89 15.81C17.1 15.23 17.1 14.73 17.04 14.63C16.97 14.52 16.81 14.47 16.56 14.41Z"/>
+            </svg>
+            <span>Share on WhatsApp</span>
+          </button>
+        </div>
+
+        <div class="copy-link-box">
+          <input type="text" id="share-link-input" readonly value="https://swetha-weds-lokesh.wedding">
+          <button type="button" class="btn-copy" id="copy-link-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 15px; height: 15px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184" />
+            </svg>
+            <span id="copy-btn-text">Copy Link</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blessings & Love Wall (No phone number, no member counts requested!) -->
+    <section class="blessings-section" id="blessings">
+      <div class="blessings-container">
+        <h2 class="section-title">Showers of Blessings</h2>
+        <div class="divider-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+          </svg>
+        </div>
+        <p class="section-subtitle">Shower your love, heartfelt prayers, and warm wishes upon Swetha & Lokesh!</p>
+
+        <!-- Interactive Love Tap Counter -->
+        <div class="love-counter-bar">
+          <button type="button" class="love-heart-btn" id="love-heart-btn" aria-label="Tap to send love">
+            <span class="heart-pulse">❤️</span>
+            <span class="love-text">Send Love</span>
+            <span class="love-badge" id="love-count-badge">128</span>
+          </button>
+        </div>
+        
+        <!-- Preset quick-tap blessings -->
+        <div class="quick-blessings-row">
+          <button type="button" class="chip-blessing" data-wish="✝️ May Almighty God shower His richest blessings upon your marriage!">✝️ God Bless</button>
+          <button type="button" class="chip-blessing" data-wish="💐 Wishing Swetha & Lokesh a lifetime of unending joy and harmony!">💐 Lifetime Joy</button>
+          <button type="button" class="chip-blessing" data-wish="✨ Happy Married Life! May love always light your path!">✨ Happy Married Life</button>
+          <button type="button" class="chip-blessing" data-wish="💖 Congratulations to the most beautiful couple!">💖 Heartiest Congrats</button>
+        </div>
+
+        <!-- Blessings scroll wall -->
+        <div class="blessings-wall" id="blessings-wall">
+          <!-- Dynamically injected blessings -->
+        </div>
+        
+        <!-- Send Blessing Form (Simple message only - no phone number or member counts!) -->
+        <form class="blessings-form" id="blessings-form">
+          <div class="blessings-message-wrapper">
+            <input type="text" id="blessing-message" placeholder="Type a warm blessing or prayer for the couple..." class="blessings-input-message" required autocomplete="off">
+            <button type="submit" class="blessings-submit-btn" aria-label="Send Blessing">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="holy-cross-footer">✝</div>
+      <h2 class="footer-title">“Love never fails.”</h2>
+      <p class="footer-verse">1 Corinthians 13:8</p>
+      
+      <div class="divider-gold" style="max-width: 140px; margin: 15px auto 25px;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+        </svg>
+      </div>
+      
+      <p class="footer-venue-summary">October 21, 2026 • Vishnu Mahal, Minjur, Chennai</p>
+      <p class="footer-credits">Made with ❤️ for Ch Swetha & C Lokesh</p>
+    </footer>
+
+  </main>
+
+  <!-- Interactive Floating Caricature Couple (Saying Hi at bottom-left!) -->
+  <div class="cartoon-couple-sticker" id="cartoon-couple-sticker" title="Click us to chat!">
+    <div class="speech-bubble" id="couple-speech-bubble">
+      <p id="bubble-text">Hi there! Welcome to our wedding invitation! 👋</p>
+    </div>
+    <div class="sticker-image-wrapper">
+      <img src="assets/cartoon_couple.png" alt="Swetha & Lokesh Cartoon Saying Hi" id="cartoon-couple-img">
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
