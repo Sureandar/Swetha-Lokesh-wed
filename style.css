@@ -845,61 +845,16 @@ main {
 }
 
 /* ==========================================================================
-   Official Digital Invitation Poster Section
+   Share Invitation Section
    ========================================================================== */
-.poster-section {
+.share-section {
   margin-bottom: 40px;
-}
-
-.posters-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 24px;
-  margin-bottom: 25px;
-}
-
-.poster-preview-card {
   background: var(--color-card-bg);
   border: 1.5px solid var(--color-card-border);
   border-radius: var(--radius-lg);
-  padding: 22px;
-  box-shadow: var(--shadow-md);
+  padding: 34px 24px;
+  box-shadow: var(--shadow-sm);
   text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.poster-badge-title {
-  font-family: var(--font-serif-title);
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--color-wine);
-  margin-bottom: 14px;
-  letter-spacing: 0.5px;
-}
-
-.poster-image-frame {
-  position: relative;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  margin-bottom: 16px;
-  border: 2px solid rgba(197, 155, 64, 0.4);
-}
-.poster-preview-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.4s ease;
-}
-.poster-preview-img:hover {
-  transform: scale(1.02);
-}
-
-.poster-card-actions {
-  display: flex;
-  gap: 12px;
-  margin-top: auto;
 }
 
 .share-box-container {
