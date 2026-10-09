@@ -1,5 +1,5 @@
 // ==========================================================================
-// Interactive Wedding Invitation: Ch Swetha & C Lokesh
+// Interactive Wedding Invitation: C Lokesh & Ch Swetha
 // Date: October 21, 2026 | Vishnu Mahal, Minjur, Chennai
 // ==========================================================================
 
@@ -11,9 +11,9 @@ let loveCount = 128;
 
 // Initial warm blessing messages
 const defaultBlessings = [
-  { text: "May God unite your hearts with endless love and divine grace! Hearty congratulations Swetha & Lokesh! ✝️❤️", time: "Just now" },
+  { text: "May God unite your hearts with endless love and divine grace! Hearty congratulations Lokesh & Swetha! ✝️❤️", time: "Just now" },
   { text: "Wishing you both a joyous married life filled with laughter, peace, and abundance! 💐✨", time: "2 hours ago" },
-  { text: "Congratulations dear Swetha and Lokesh! Can't wait to celebrate at Vishnu Mahal, Minjur! 🎉🥂", time: "Yesterday" }
+  { text: "Congratulations dear Lokesh and Swetha! Can't wait to celebrate at Vishnu Mahal, Minjur! 🎉🥂", time: "Yesterday" }
 ];
 
 // Interactive Caricature dialogues
@@ -265,15 +265,15 @@ function downloadICSEvent() {
   const icsContent = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Swetha & Lokesh Wedding//EN",
+    "PRODID:-//Lokesh & Swetha Wedding//EN",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     "BEGIN:VEVENT",
-    "UID:swetha-lokesh-wedding-20261021@wedding.com",
+    "UID:lokesh-swetha-wedding-20261021@wedding.com",
     "DTSTAMP:20261009T000000Z",
     "DTSTART:20261021T050000Z", // 10:30 AM IST
     "DTEND:20261021T103000Z",   // 4:00 PM IST
-    "SUMMARY:Wedding & Reception of Ch Swetha & C Lokesh 💍✝️",
+    "SUMMARY:Wedding & Reception of C Lokesh & Ch Swetha 💍✝️",
     "DESCRIPTION:Marriage Ceremony starts at 10:30 AM morning and Wedding Reception starts at 12:30 PM afternoon at Vishnu Mahal, Minjur, Chennai. Your prayers and presence are cherished!",
     "LOCATION:Vishnu Mahal, Minjur, Chennai, Tamil Nadu",
     "STATUS:CONFIRMED",
@@ -284,7 +284,7 @@ function downloadICSEvent() {
   const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
   const link = document.createElement("a");
   link.href = window.URL.createObjectURL(blob);
-  link.setAttribute("download", "Swetha_and_Lokesh_Wedding.ics");
+  link.setAttribute("download", "Lokesh_and_Swetha_Wedding.ics");
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -325,7 +325,7 @@ function loadBlessings() {
   const wall = document.getElementById("blessings-wall");
   if (!wall) return;
 
-  const stored = JSON.parse(localStorage.getItem("swetha_lokesh_blessings") || "null");
+  const stored = JSON.parse(localStorage.getItem("lokesh_swetha_blessings") || localStorage.getItem("swetha_lokesh_blessings") || "null");
   const blessings = stored && stored.length > 0 ? stored : defaultBlessings;
 
   wall.innerHTML = "";
@@ -342,9 +342,9 @@ function submitBlessing(text) {
     time: "Just now"
   };
 
-  const stored = JSON.parse(localStorage.getItem("swetha_lokesh_blessings") || "[]");
+  const stored = JSON.parse(localStorage.getItem("lokesh_swetha_blessings") || localStorage.getItem("swetha_lokesh_blessings") || "[]");
   stored.unshift(newBlessing);
-  localStorage.setItem("swetha_lokesh_blessings", JSON.stringify(stored));
+  localStorage.setItem("lokesh_swetha_blessings", JSON.stringify(stored));
 
   appendBlessingToWall(newBlessing.text, newBlessing.time, true);
 }
