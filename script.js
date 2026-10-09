@@ -98,18 +98,6 @@ function setupEventListeners() {
       }
     });
   }
-
-  // Copy Link Button
-  const copyBtn = document.getElementById("copy-link-btn");
-  if (copyBtn) {
-    copyBtn.addEventListener("click", copyInvitationLink);
-  }
-
-  // Share on WhatsApp Button
-  const shareWhatsAppBtn = document.getElementById("share-whatsapp-btn");
-  if (shareWhatsAppBtn) {
-    shareWhatsAppBtn.addEventListener("click", shareOnWhatsApp);
-  }
 }
 
 // 1. Open Invitation Envelope Experience
@@ -383,43 +371,4 @@ function escapeHtml(text) {
   const div = document.createElement("div");
   div.innerText = text;
   return div.innerHTML;
-}
-
-// 8. Sharing Features
-function copyInvitationLink() {
-  const shareInput = document.getElementById("share-link-input");
-  const copyBtnText = document.getElementById("copy-btn-text");
-  
-  if (shareInput) {
-    shareInput.select();
-    navigator.clipboard.writeText(shareInput.value)
-      .then(() => {
-        if (copyBtnText) {
-          copyBtnText.innerText = "Copied! ✅";
-          setTimeout(() => {
-            copyBtnText.innerText = "Copy Link";
-          }, 2500);
-        }
-      })
-      .catch(() => {
-        // Fallback
-        document.execCommand("copy");
-        if (copyBtnText) copyBtnText.innerText = "Copied! ✅";
-      });
-  }
-}
-
-function shareOnWhatsApp() {
-  const text = encodeURIComponent(
-    "💍✝️ *You're Cordially Invited!*\n\n" +
-    "Together with our families, we invite you to celebrate the Wedding & Reception of *Ch Swetha & C Lokesh*.\n\n" +
-    "📅 *Date:* Wednesday, October 21, 2026\n" +
-    "⏰ *Timing:*\n" +
-    "  • Marriage Ceremony: 10:30 AM (Morning)\n" +
-    "  • Wedding Reception: 12:30 PM (Afternoon)\n" +
-    "🏛️ *Venue:* Vishnu Mahal, Minjur, Chennai\n\n" +
-    "✨ Tap below to view our digital wedding invitation & map directions:\n" +
-    window.location.href
-  );
-  window.open(`https://api.whatsapp.com/send?text=${text}`, "_blank");
 }
