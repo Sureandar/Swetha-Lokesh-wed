@@ -270,19 +270,20 @@ body {
 }
 
 .cover-subtitle {
-  font-size: 0.84rem;
+  font-size: 0.88rem;
   color: var(--color-text-muted);
   letter-spacing: 0.5px;
-  margin-bottom: 12px;
-  line-height: 1.5;
+  margin-bottom: 18px;
+  line-height: 1.6;
 }
 
 .cover-names {
   font-family: var(--font-calligraphy);
-  font-size: 2.8rem;
+  font-size: 2.9rem;
   color: var(--color-wine);
-  line-height: 1.1;
-  margin-bottom: 8px;
+  line-height: 1.25;
+  margin-top: 6px;
+  margin-bottom: 14px;
 }
 .cover-names span {
   font-family: var(--font-serif-title);

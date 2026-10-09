@@ -283,8 +283,8 @@ function downloadICSEvent() {
     "DTSTAMP:20261009T000000Z",
     "DTSTART:20261021T040000Z", // 9:30 AM IST
     "DTEND:20261021T163000Z",   // 10:00 PM IST
-    "SUMMARY:Holy Matrimony & Reception of Ch Swetha & C Lokesh 💍✝️",
-    "DESCRIPTION:South Indian Christian Wedding Ceremony & Grand Reception of Ch Swetha & C Lokesh. Your prayers and presence are cherished!",
+    "SUMMARY:Wedding & Reception of Ch Swetha & C Lokesh 💍✝️",
+    "DESCRIPTION:Wedding Ceremony & Grand Reception of Ch Swetha & C Lokesh. Your prayers and presence are cherished!",
     "LOCATION:Vishnu Mahal, Minjur, Chennai, Tamil Nadu",
     "STATUS:CONFIRMED",
     "END:VEVENT",
@@ -410,7 +410,7 @@ function copyInvitationLink() {
 function shareOnWhatsApp() {
   const text = encodeURIComponent(
     "💍✝️ *You're Cordially Invited!*\n\n" +
-    "Together with our families, we invite you to celebrate the Holy Matrimony & Reception of *Ch Swetha & C Lokesh*.\n\n" +
+    "Together with our families, we invite you to celebrate the Wedding & Reception of *Ch Swetha & C Lokesh*.\n\n" +
     "📅 *Date:* Wednesday, October 21, 2026\n" +
     "🏛️ *Venue:* Vishnu Mahal, Minjur, Chennai\n\n" +
     "✨ Tap below to view our digital wedding invitation & map directions:\n" +
